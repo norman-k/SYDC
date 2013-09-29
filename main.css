@@ -8,9 +8,21 @@ body {
 a {
   text-decoration: none;
 }
-a:hover {
-  color: #005580;
+h4 a {
+  color: inherit;
   text-decoration: none;
+}
+a:hover {
+  color: none;
+  text-decoration: none;
+}
+.menu {
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin-bottom: 0;
+  border-width:0 0 10px;
+  top:0;
 }
 .menu-container {
   margin-right: auto;
@@ -32,7 +44,7 @@ a:hover {
      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
-.menu .menu-title {
+.menu-title {
   display: block;
   float: left;
   padding: 10px 20px;
@@ -42,29 +54,27 @@ a:hover {
   color: #777777;
   text-shadow: 0 1px 0 #ffffff;
 }
-.menu-fixed-top .menu-inner {
+.menu .menu-inner {
   border-width: 0 0 1px;
 }
-.menu .menu-options {
-  position: relative;
-  left: 0;
+.menu-options {
   display: block;
   float: left;
   margin: 0 10px 0 0;
 }
-.menu .menu-options > li {
+.menu-options > li {
   float: left;
 }
-.menu .menu-options > li > a {
+.menu-options > li > a {
   float: none;
   padding: 10px 15px 10px;
   color: #777777;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
 }
-.menu .menu-options > .active > a,
-.menu .menu-options > .active > a:hover,
-.menu .menu-options > .active > a:focus {
+.menu-options > .active > a,
+.menu-options > .active > a:hover,
+.menu-options > .active > a:focus {
   color: #555555;
   text-decoration: none;
   background-color: #e5e5e5;
@@ -72,16 +82,36 @@ a:hover {
      -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
-.menu-fixed-top .menu-container {
+.menu .menu-container {
     width: 1150px;
 }
 h3 {
   margin-left: 20px;
 }
+h4 {
+  text-align: center;
+  line-height:20px;
+  color:#fff;
+  margin:0 0 5px;
+}
 .news-indent {
-  margin-left: 25px;
+  margin-left: 167px;
 }
 .newsletter {
   margin-left: 20px;
-  font-weight: bold;
+}
+img {
+  z-index: -1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 450px;
+  min-width: 1000px;
+}
+.image-text {
+  position: absolute;
+  padding:15px;
+  background-color:rgba(255,250,250,0.3);
+  margin-left: 520px;
+  margin-top: -55px;
 }
